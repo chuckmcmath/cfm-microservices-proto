@@ -12,8 +12,8 @@
 	<description>Sample Service</description>
 
 	<parent>
-		<groupId>cfm.microservices.parent</groupId>
-		<artifactId>cfm-microservices-parent</artifactId>
+		<groupId>cfm.microservices.prototype</groupId>
+		<artifactId>cfm-microservices-proto</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
