@@ -50,6 +50,7 @@ Each service implements a couple of endpoints:
 
  - `/data` : a simple endpoint that shows a message identifying the service
  - `/my-instances` : an array of information about each instance of the service
+ 
  along with typical spring boot actuator endpoints:
  - `/health` : a health indication
  - `/info` : displays some information about the service
