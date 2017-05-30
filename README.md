@@ -64,6 +64,14 @@ Each service implements a couple of endpoints:
  
  All of the service-one endpoints are mapped to the service-one/ path, and all of the service-two endpoints are mapped to the service-two/ path. Zuul provides the mechanism to centralize access, filter requests, and shield direct access to microservices from sources except from the gateway itself.
 
+## Putting it all together ##
+
+Zuul can also serve static content. By default, any content placed in the `/src/main/resources/static` folder is served up. So in addition to the gateway functions, Zuul serves as a static http server. Navigate to
+
+`http://localhost:8080`
+
+to see a static html page loaded by Zuul. This page makes two ajax calls to microservices one and two, and displays their responses in the page. This then can serve as the foundation of our microservice architecture.
+
 
  
  

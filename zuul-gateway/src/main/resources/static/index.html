@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="main">
+		<h2>Sub-services</h2>
+		<div id="s1"></div>
+		<div id="s2"></div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			console.log("why hello thar");
+
+			$.get("service-one/data", function(data) {
+				$('#s1').html(data);
+			});
+			
+			$.get("service-two/data", function(data) {
+				$('#s2').html(data);
+			});
+		});
+	</script>
+</body>
+</html>
