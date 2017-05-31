@@ -66,7 +66,7 @@ Each service implements a couple of endpoints:
 
 ## Putting it all together ##
 
-Zuul can also serve static content. By default, any content placed in the `/src/main/resources/static` folder is served up (if you use this default location you don't have to do any routing configuration - as with so many Spring features 'it just works'). So in addition to the gateway functions, Zuul serves as a static http server. Navigate your browser to
+Spring Boot webapps can also serve static content. By default, any content placed in the `/src/main/resources/static` folder is served up (if you use this default location you don't have to do any routing configuration - as with so many Spring features 'it just works'). Since Zuul is using port 8080 it makes sense to have it act as our webserver for static data. So in addition to the gateway functions we will use Zuul as a static http server. Navigate your browser to
 
 `http://localhost:8080`
 
