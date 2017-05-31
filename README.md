@@ -66,11 +66,11 @@ Each service implements a couple of endpoints:
 
 ## Putting it all together ##
 
-Zuul can also serve static content. By default, any content placed in the `/src/main/resources/static` folder is served up. So in addition to the gateway functions, Zuul serves as a static http server. Navigate to
+Zuul can also serve static content. By default, any content placed in the `/src/main/resources/static` folder is served up (if you use this default location you don't have to do any routing configuration - as with so many Spring features 'it just works'). So in addition to the gateway functions, Zuul serves as a static http server. Navigate your browser to
 
 `http://localhost:8080`
 
-to see a static html page loaded by Zuul. This page makes two ajax calls to microservices one and two, and displays their responses in the page. This then can serve as the foundation of our microservice architecture.
+to see a very simple static page served up by Zuul. When loaded, this page makes an ajax call to each microservice and displays their responses in the page. This then can serve as the foundation of a web front-end to our deployed microservices.
 
 
  
